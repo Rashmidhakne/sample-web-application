@@ -4,8 +4,8 @@
 
 pipeline{
 
-      agent {
-                java-docker-slave {
+      agent{
+                java-docker-slave{
                 image 'maven:3-openjdk-11'
                 args '-v $HOME/.m2:/root/.m2'
                 }
