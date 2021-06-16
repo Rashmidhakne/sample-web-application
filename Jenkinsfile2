@@ -6,7 +6,7 @@ pipeline{
 
       agent{
                 docker {
-                image 'maven:3.3-jdk-8'
+                image 'maven'
 		args '-u jenkins:jenkins -p 3000:3000 --privileged -v /var/run/docker.sock:/var/run/docker.sock -v $HOME/.m2:/root/.m2'
                 }
             }
